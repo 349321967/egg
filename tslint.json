@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "tslint-config-egg"
+  ],
+  "rules": {
+    "no-trailing-whitespace": false
+  }
+}
