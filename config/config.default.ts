@@ -27,6 +27,16 @@ export default (appInfo: EggAppInfo) => {
     cookieMaxAge: '1y',
   };
 
+  //mysql
+  config.sequelize = {
+    dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
+    database: 'egg',
+    host: 'localhost',
+    port: 3306,
+    username: 'root',
+    password: '123456',
+  };
+
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
