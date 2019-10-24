@@ -22,6 +22,7 @@ export default class HomeController extends Controller {
     };
 
     console.info(c);
+    console.info(ctx.__('Email'));
 
     ctx.body = await ctx.service.test.sayHi('egg');
     // ctx.body = ctx.__('Email');

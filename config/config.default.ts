@@ -27,7 +27,7 @@ export default (appInfo: EggAppInfo) => {
     cookieMaxAge: '1y',
   };
 
-  //mysql
+  // mysql
   config.sequelize = {
     dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
     database: 'egg',

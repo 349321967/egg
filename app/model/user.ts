@@ -8,25 +8,25 @@ module.exports = app => {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: null,
-            primaryKey: true
+            primaryKey: true,
         },
         name: {
             type: DataTypes.STRING,
             allowNull: true,
             defaultValue: null,
-            primaryKey: false
+            primaryKey: false,
         },
         pwd: {
             type: DataTypes.STRING,
             allowNull: true,
             defaultValue: null,
-            primaryKey: false
+            primaryKey: false,
         },
         create_time: {
             type: DataTypes.DATE,
             allowNull: true,
             defaultValue: null,
-            primaryKey: false
+            primaryKey: false,
         },
     }, {
         // don't forget to enable timestamps!
@@ -34,8 +34,8 @@ module.exports = app => {
       
         // I don't want createdAt
         createdAt: false,
-        updatedAt:false,
-        deletedAt:false,
+        updatedAt: false,
+        deletedAt: false,
       
         // // I want updatedAt to actually be called updateTimestamp
         // updatedAt: 'updateTimestamp',
